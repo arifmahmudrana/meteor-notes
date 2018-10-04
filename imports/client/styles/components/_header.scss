@@ -1,0 +1,28 @@
+.header {
+  background: $header-bg;
+  color: $header-col;
+  height: $header-height;
+
+  &--title {
+    margin: 0;
+  }
+
+  &--container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: $space;
+  }
+
+  &--link {
+    color: inherit;
+  }
+
+  &__nav-toggle {
+    cursor: pointer;
+    width: 2rem;
+    @include desktop {
+      display: none;
+    }
+  }
+}

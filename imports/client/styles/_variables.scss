@@ -1,0 +1,47 @@
+//colors
+$primary-col: #397ab1;
+$grey: #ddd;
+$light-grey: #f9f9f9;
+$dark-grey: #777;
+$white: white;
+$black: black;
+$light-black: #333;
+
+//spacing
+$space: 1.4rem;
+$large-space: calc(2 * #{$space});
+
+//base generic
+$base-font-size: $space;
+$large-font-size: 2.2rem;
+$anchor-color: $light-black;
+
+//body
+$body-back-col: #fafafa;
+$body-col: $light-black;
+
+//form
+$input-border: $grey;
+$inp-space: 1rem;
+
+//box view
+$boxed-view-bg: $grey;
+$boxed-view-box-bg: $white;
+$boxed-view-border-col: $grey;
+
+//button
+$btn-bg: $primary-col;
+
+//header
+$header-bg: $primary-col;
+$header-col: $white;
+$header-height: 6rem;
+
+//item
+$item-border-width: 4px;
+
+//wrapper
+$wrapper-height: calc(100vh - #{$header-height});
+$wrapper-width: 100rem;
+$wrapper-sidebar-width: 30rem;
+$wrapper-main-width: calc(#{$wrapper-width} - #{$wrapper-sidebar-width});

@@ -1,0 +1,21 @@
+.button {
+  background-color: $btn-bg;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  font-size: inherit;
+  line-height: 1.2;
+  margin-bottom: $space;
+  padding: $inp-space;
+  text-transform: uppercase;
+
+  &--link {
+    display: inline-block;
+  }
+
+  &--secondary {
+    background: $light-grey;
+    border: 1px solid $grey;
+    color: $dark-grey;
+  }
+}

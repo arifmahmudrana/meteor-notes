@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: $wrapper-width;
+  padding: 0;
+
+  @include desktop {
+    padding: $large-space $space;
+  }
+
+  &--content {
+    height: $wrapper-height;
+  }
+
+  &__sidebar {
+    display: flex;
+    padding-right: 0;
+    transition: left .3s ease-in-out;
+    width: 100vw;
+
+    position: fixed;
+    top: $header-height;
+    left: -100vw;
+    bottom: 0;
+
+    z-index: 1;
+
+    @include desktop {
+      display: flex;
+      padding-right: $large-space;
+
+      position: initial;
+      top: auto;
+      left: auto;
+      bottom: auto;
+
+      width: $wrapper-sidebar-width;
+    }
+  }
+
+  &__main {
+    display: flex;
+    width: 100%;
+    @include desktop {
+      width: $wrapper-main-width;
+    }
+  }
+}
+
+.nav-open .wrapper__sidebar {
+  left: 0;
+}

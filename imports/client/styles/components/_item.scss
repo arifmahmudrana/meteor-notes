@@ -1,0 +1,52 @@
+.item {
+  border-left: $item-border-width solid transparent;
+  padding: $space;
+  transition: background-color .3s ease-in-out, border-left .3s ease-in-out;
+
+  &:hover {
+    background-color: $light-grey;
+    border-left: $item-border-width solid $grey;
+  }
+
+  &__title {
+    font-size: $base-font-size;
+    font-weight: normal;
+    margin-bottom: .4rem;
+  }
+
+  &__subtitle {
+    color: $dark-grey;
+    margin: 0;
+  }
+
+  &--selected {
+    &, &:hover {
+      background-color: $light-grey;
+      border-left: $item-border-width solid $primary-col;
+    }
+  }
+
+  &--selected &__title {
+    font-weight: bold;
+  }
+
+  &-list {
+    background-color: $white;
+    border: 1px solid $grey;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  
+    &__empty {
+      font-style: italic;
+      padding: $space;
+      text-align: center;
+    }
+  
+    &__header {
+      display: flex;
+      flex-direction: column;
+      padding: $space;
+    }
+  }
+}
